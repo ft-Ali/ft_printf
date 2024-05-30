@@ -61,3 +61,54 @@ int	ft_printf(const char *format, ...)
 	va_end(ap);
 	return (count);
 }
+
+
+/* #include "ft_printf.h"
+#include <stdio.h>
+
+int	main(void)
+{
+	int i;
+	unsigned intj;
+	char *str;
+	void *ptr;
+	int j;
+
+	i = -2147483648;
+	ft_printf("int min :\n");
+	ft_printf("<-ft : %d\n", ft_printf("%d", i));
+	printf("<-OG : %d\n", printf("%d", i));
+	str = NULL;
+	ft_printf("str NULL :\n");
+	ft_printf("<-ft : %d\n", ft_printf("%s", str));
+	printf("<-OG : %d\n", printf("%s", str));
+	ptr = NULL;
+	ft_printf("ptr NULL :\n");
+	ft_printf("<-ft : %d\n", ft_printf("%p", str));
+	printf("<-OG : %d\n", printf("%p", str));
+	ft_printf("guillemets :\n");
+	ft_printf("<-ft : %d\n", ft_printf(""));
+	printf("<-OG : %d\n", printf(""));
+	ft_printf("ft_printf(0) :\n");
+	ft_printf("<-ft : %d\n", ft_printf(0));
+	printf("<-OG : %d\n", printf(0));
+	ft_printf("pourcent :\n");
+	ft_printf("<-ft : %d\n", ft_printf("%%"));
+	printf("<-OG : %d\n", printf("%%"));
+	str = "les loulous";
+	ptr = str;
+	ft_printf("differents flags au milieu d'un phrase :\n");
+	ft_printf("<-ft : %d\n", ft_printf("%p Salut %s l'int %% min vaut %d au revoir %s", ptr, str, i, str));
+	printf("<-OG : %d\n", printf("%p Salut %s l'int %% min vaut %d au revoir %s", ptr, str, i, str));
+	i = 42;
+	ft_printf("print X :\n");
+	ft_printf("<-ft : %d\n", ft_printf("%X", i));
+	printf("<-OG : %d\n", printf("%X", i));
+	ft_printf("print x :\n");
+	ft_printf("<-ft : %d\n", ft_printf("%x", i));
+	printf("<-OG : %d\n", printf("%x", i));
+	j = -2147483648;
+	ft_printf("print u :\n");
+	ft_printf("<-ft : %d\n", ft_printf("%u", j));
+	printf("<-OG : %d\n", printf("%u", j));
+} */
